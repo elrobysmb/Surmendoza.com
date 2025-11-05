@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INNOVATECH</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+       <!-- Bootstrap Icons -->
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+       <!-- Boxicons CSS -->
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css">
+
+
+    
+    <!-- Google Fonts (Poppins) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+     <!-- Navigation -->
+     <nav class="navbar navbar-expand-lg navbar-light py-3 sticky">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/iSAGI_Cloud_logo_white.png" alt="Isagi Logo" width="130">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="nav-link" id="navbarNav">
+                <ul>
+                    <li>
+                        <a href="index.html">Inicio</a>
+                    </li>
+
+                    <li>
+                        <a class="navbar-nav active btn btn-primary my-1 px-4" style="color:rgb(255, 255, 255);" aria-current="page" href="contactenos.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+     <!-- contact form -->
+    <main>
+        <section id="Contacto" class="py-4 d-flex align-items-center ">
+
+            <div class="container my-4 py-4 ">
+                <hr>
+                <div class="row align-items-center justify-content-around pt-4 ">
+                    <div class="col-10 col-md-6 col-lg-5 text-center text-md-start ">
+                        <div class="display-3 pb-2">Contáctenos</div>
+                        <h3>Comuníquese con nosotros</h3>
+                        <div class="h5">
+                            La revolución de la industria 4.0 está a tu a tu alcance.
+                        </div>
+        
+                    </div>
+                    <div class="col-9 col-md-6 col-lg-5 py-5">
+                        <div>
+                            <div class="mb-3">
+                                <label for="firstname" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" id="firstname" placeholder="">
+                            </div>
+                            <div class="mb-3">
+                                <label for="movil" class="form-label">Teléfono</label>
+                                <input type="text" class="form-control" id="movil" placeholder="">
+                            </div>
+                            <label for="email" class="form-label">Correo electrónico</label>
+                            <input type="email" class="form-control" id="email" placeholder="">
+                        </div>
+                        <div class="text-center text-md-start">
+                            <button type="button" class="btn btn-primary btn-lg my-4 px-4" onclick="contacto()">Enviar mis
+                                datos de contacto</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+    </main>
+    <hr class="container my-4 py-4">
+    <br>
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Columna 1: Logo y descripción -->
+                <div class="col-md-4 pr-4">
+                    <img src="images/logo-dark.svg" alt="iSAGI Logo" width="180" class="mb-3">
+                    <p>Impulse mejores resultados a través de experiencias basadas en datos más inteligentes.</p>
+                    <div class="social-links mt-4">
+                        <a href="https://linkedin.com/company/isagi" target="_blank">
+                            <i class="bx bxl-linkedin" style="font-size: 1.5rem; color: rgb(255, 255, 255);"></i>
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=100078693523876" target="_blank">
+                            <i class="bx bxl-facebook" style="font-size: 1.5rem; color: white;"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-2">
+                </div>
+
+                <div class="col-md-3">
+                    <h5 style="color: rgb(131, 131, 131);">Enlaces</h5>
+                    <ul class="list-unstyled">
+                        <li class="pb-2"><a href="index.html" class="text-white text-decoration-none ">Inicio</a></li>
+                        <li class="pb-2"><a href="quienes-somos.html" class="text-white text-decoration-none">Quiénes
+                                Somos</a></li>
+                        <li class="pb-2"><a href="#servicios" class="text-white text-decoration-none">Servicios</a>
+                        </li>
+                        <li class="pb-2"><a href="contactenos.html" class="text-white text-decoration-none">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3">
+                    <h5 style="color: rgb(131, 131, 131);">Contacto</h5>
+                    <p><i class="bi bi-suitcase-lg"></i> <span class="ms-2 text-white">
+                            comercial@isagi.cloud
+                        </span></p>
+                    <p><i class="bi bi-envelope-at"></i> <span class="ms-2 text-white">
+                            soporte@isagi.cloud
+                        </span></p>
+                    <p><i class="bi bi-whatsapp"></i><span class="ms-2 text-white">
+                            +51 923 144 996
+                        </span>
+                    </p>
+                    <p><i class="bi bi-geo-alt-fill"></i><span class="ms-2 text-white">
+                            Jr. Cruz del Sur 140<br>
+                            Edificio Time Oficina 1514,<br>
+                            Santiago de Surco, Lima</p>
+                    </span>
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- Línea Divisoria -->
+            <hr class="my-4 border-light">
+
+            <!-- Copyright y Políticas -->
+            <div class="text-center">
+                <p class="mb-0">© Copyright 2024 iSAGI PERU S.A.C. Todos los derechos reservados.</p>
+                <a href="terminos.html" class="text-white text-decoration-none">Términos y condiciones</a> •
+                <a href="politica-privacidad.html" class="text-white text-decoration-none">Política de privacidad</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script defer src="js/nabvarscroll.js"></script>
+</body>
+</html>```

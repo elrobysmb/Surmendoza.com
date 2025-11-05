@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Land for Sale in Jacksonville, Oregon</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="property-listing-page">
+        <!-- Header Section -->
+        <div class="property-header">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-8">
+                        <p class="property-address mb-2">11777 Highway 238 · Jacksonville, OR 97530</p>
+                        <h1 class="property-main-title mb-3">Land for Sale in Jacksonville, Oregon</h1>
+                    </div>
+                    <div class="col-md-4 text-md-end">
+                        <div class="property-status-price">
+                            <span class="status-badge"><i class="fas fa-circle"></i> Active</span>
+                            <span class="est-payment">Est $64,107/mo</span>
+                            <h2 class="property-header-price">$8,500,000</h2>
+                            <p class="property-header-size">255 acres</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="property-actions mt-3">
+                    <button class="btn-action"><i class="fas fa-share-alt"></i> Share</button>
+                    <button class="btn-action"><i class="far fa-heart"></i> Save</button>
+                    <button class="btn-action"><i class="fas fa-eye-slash"></i> Hide</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation Tabs -->
+        <div class="property-nav">
+            <div class="container">
+                <ul class="nav-tabs-property">
+                    <li class="active" data-tab="images"><i class="far fa-images"></i> Images</li>
+                    <li data-tab="video"><i class="fas fa-video"></i> Video</li>
+                    <li data-tab="map"><i class="fas fa-map"></i> Map</li>
+                    <li data-tab="landid"><i class="fas fa-landmark"></i> Land id</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="container mt-4">
+            <div class="row">
+                <!-- Left Column - Gallery & Description -->
+                <div class="col-lg-8">
+                    <!-- Media Container -->
+                    <div class="property-media-container">
+                        <!-- Image Gallery (Swiper) -->
+                        <div id="imagesContent" class="media-content active">
+                            <div class="property-gallery">
+                                <div class="swiper propertySwiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1200" alt="Property View 1">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=1200" alt="Property View 2">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200" alt="Property View 3">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=1200" alt="Property View 4">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=1200" alt="Property View 5">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?w=1200" alt="Property View 6">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-pagination"></div>
+                                    <button class="gallery-expand"><i class="fas fa-expand"></i></button>
+                                </div>
+                                
+                                <!-- Thumbnails -->
+                                <div class="swiper propertyThumbs">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=400" alt="Thumb 1">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=400" alt="Thumb 2">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=400" alt="Thumb 3">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=400" alt="Thumb 4">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=400" alt="Thumb 5">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?w=400" alt="Thumb 6">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Video Content -->
+                        <div id="videoContent" class="media-content">
+                            <div class="video-container">
+                                <iframe 
+                                    id="youtubeVideo"
+                                    width="100%" 
+                                    height="500" 
+                                    src="https://www.youtube.com/watch?v=pgkPi2KKm2g" 
+                                    title="Property Video Tour" 
+                                    frameborder="0" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
+                        </div>
+
+                        <!-- Map Content -->
+                        <div id="mapContent" class="media-content">
+                            <div class="map-container">
+                                <iframe 
+                                    width="100%" 
+                                    height="500" 
+                                    frameborder="0" 
+                                    style="border:0" 
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3003.9542069876634!2d-123.11643!3d42.2382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54cf6f1f5b5b5b5b%3A0x5b5b5b5b5b5b5b5b!2sJacksonville%2C%20OR%2097530%2C%20USA!5e0!3m2!1sen!2spe!4v1234567890" 
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
+                        </div>
+
+                        <!-- Land ID Content -->
+                        <div id="landidContent" class="media-content">
+                            <div class="landid-info">
+                                <h3>Land Identification Information</h3>
+                                <div class="landid-details">
+                                    <div class="landid-item">
+                                        <span class="landid-label">Parcel Number:</span>
+                                        <span class="landid-value">10309774</span>
+                                    </div>
+                                    <div class="landid-item">
+                                        <span class="landid-label">Legal Description:</span>
+                                        <span class="landid-value">Section 23, Township 37S, Range 3W</span>
+                                    </div>
+                                    <div class="landid-item">
+                                        <span class="landid-label">Zoning:</span>
+                                        <span class="landid-value">Agricultural/Residential</span>
+                                    </div>
+                                    <div class="landid-item">
+                                        <span class="landid-label">Tax ID:</span>
+                                        <span class="landid-value">R337923-00100</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Property Description -->
+                    <div class="property-description mt-4">
+                        <h3 class="section-subtitle">Property Description</h3>
+                        <div class="description-content">
+                            <p>Welcome to Red Lily Vineyards, one of the most acclaimed vineyards in the esteemed Applegate Valley of Southern Oregon.</p>
+                            
+                            <p>Renowned for its exceptional wines and captivating scenery, Red Lily Vineyards presents an alluring mix of established wine and agri-business with great opportunities for event and hospitality expansion. It's not just a business; it's a gateway to an extraordinary experience and a haven for those seeking a rare and sought-after investment and lifestyle opportunity.</p>
+                            
+                            <p>This 255-acre ranch and estate boasts strong water rights, breathtaking river frontage, hectares of the prized Applegate 'red' terroir, mature vineyard, and expanses of quality irrigated land for diverse agricultural pursuits.</p>
+                            
+                            <div class="read-more-toggle">
+                                <button class="btn-read-more">Read more</button>
+                            </div>
+                        </div>
+
+                        <!-- Property Tags -->
+                        <div class="property-tags mt-4">
+                            <span class="tag-item">Agricultural</span>
+                            <span class="tag-item">Commercial</span>
+                            <span class="tag-item">Residential</span>
+                            <span class="tag-item">Barn</span>
+                            <span class="tag-item">Farm house</span>
+                            <span class="tag-item">Irrigated</span>
+                            <span class="tag-item">Owner financed</span>
+                            <span class="tag-item">River property</span>
+                            <span class="tag-item">Rural</span>
+                            <span class="tag-item">Vineyard</span>
+                            <span class="tag-item">Waterfront</span>
+                            <span class="tag-item">Water well</span>
+                            <span class="tag-item">Workshop</span>
+                        </div>
+
+                        <!-- Location Details -->
+                        <div class="location-details mt-5">
+                            <h3 class="section-subtitle">Location</h3>
+                            <div class="location-info-grid">
+                                <div class="info-item">
+                                    <span class="info-label">Street address</span>
+                                    <span class="info-value">11777 Highway 238</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">County</span>
+                                    <span class="info-value">Jackson County</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">Elevation</span>
+                                    <span class="info-value">1,339 feet</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">Coordinates</span>
+                                    <span class="info-value">42.2382, -123.1143 <i class="far fa-copy"></i></span>
+                                </div>
+                            </div>
+                            <a href="#" class="link-underline">Land for sale in Oregon</a>
+                        </div>
+
+                        <!-- Property Details -->
+                        <div class="property-details-section mt-5">
+                            <h3 class="section-subtitle">Property details</h3>
+                            <div class="details-grid">
+                                <div class="detail-item">
+                                    <span class="detail-label">Acreage</span>
+                                    <span class="detail-value">255.38 acres</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">Posted</span>
+                                    <span class="detail-value">Aug 11, 2023 · 2 years ago</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Parcels -->
+                        <div class="parcels-section mt-5">
+                            <h3 class="section-subtitle">Parcels</h3>
+                            <p class="parcel-id">— 10309774</p>
+                        </div>
+
+                        <!-- Resources -->
+                        <div class="resources-section mt-5">
+                            <h3 class="section-subtitle">Resources</h3>
+                            <a href="#" class="resource-link">— Brochure</a>
+                        </div>
+
+                        <!-- Accordions -->
+                        <div class="accordion-sections mt-5">
+                            <div class="accordion-item-custom">
+                                <button class="accordion-header-custom">
+                                    <span>Listing history</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                            </div>
+                            <div class="accordion-item-custom">
+                                <button class="accordion-header-custom">
+                                    <span>Payment calculator</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Breadcrumbs -->
+                        <div class="breadcrumbs mt-5">
+                            <a href="#">Land for sale</a> / <a href="#">Oregon</a> / <a href="#">Western Oregon</a> / <a href="#">Jackson County</a> / <a href="#">Jacksonville</a> / <span>97530</span>
+                        </div>
+
+                        <!-- Footer Info -->
+                        <div class="footer-info mt-4">
+                            <p>This 255.38-acre property is located at 11777 Highway 238 in Jacksonville, OR 97530. The property is available for sale for $8,500,000 with a price per acre of $33,284.</p>
+                            <p class="mt-3">Listed by Martin Outdoor Properties, (541) 660-5111. <a href="#">Source</a></p>
+                            <p class="text-muted mt-2">Updated Sept 17, 2025</p>
+                            <a href="#" class="report-link mt-3 d-inline-block">Report listing issue</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column - Agent Contact -->
+                <div class="col-lg-4">
+                    <div class="agent-card sticky-top">
+                        <div class="agent-header">
+                            <img src="https://ui-avatars.com/api/?name=Chris+Martin&size=80&background=000C68&color=fff" alt="Chris Martin" class="agent-photo">
+                            <div class="agent-info">
+                                <h4 class="agent-name">Chris Martin</h4>
+                                <p class="agent-company">Martin Outdoor Properties</p>
+                                <a href="tel:5416605111" class="agent-phone">(541) 660-5111</a>
+                                <a href="#" class="view-profile-link">View profile</a>
+                            </div>
+                            <span class="featured-badge">Featured</span>
+                        </div>
+
+                        <div class="contact-form">
+                            <button class="btn-contact-agent">
+                                <i class="far fa-comment-dots"></i> Contact listing agent
+                            </button>
+                            <a href="#" class="message-rules-link"><i class="fas fa-info-circle"></i> Message rules</a>
+
+                            <form class="mt-4">
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" placeholder="Full name">
+                                </div>
+                                <div class="mb-3">
+                                    <input type="email" class="form-control" placeholder="Email address">
+                                </div>
+                                <div class="mb-3">
+                                    <input type="tel" class="form-control" placeholder="Phone number">
+                                </div>
+                                <div class="mb-3">
+                                    <textarea class="form-control" rows="4" placeholder="I'm interested in this property"></textarea>
+                                </div>
+                                <button type="submit" class="btn-send-message w-100">Send message</button>
+                                <p class="form-disclaimer mt-3">By submitting, I agree to the terms of use and to be contacted by real estate professionals. Message and data rates may apply.</p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        // Initialize Swiper for thumbnails first
+        const propertyThumbs = new Swiper('.propertyThumbs', {
+            spaceBetween: 10,
+            slidesPerView: 3,
+            freeMode: true,
+            watchSlidesProgress: true,
+        });
+
+        // Initialize main Swiper
+        const propertySwiper = new Swiper('.propertySwiper', {
+            spaceBetween: 10,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'fraction',
+            },
+            thumbs: {
+                swiper: propertyThumbs,
+            },
+        });
+
+        // Tab switching functionality
+        const tabs = document.querySelectorAll('.nav-tabs-property li');
+        const mediaContents = document.querySelectorAll('.media-content');
+        const youtubeVideo = document.getElementById('youtubeVideo');
+
+        tabs.forEach(tab => {
+            tab.addEventListener('click', function() {
+                const targetTab = this.getAttribute('data-tab');
+                
+                // Remove active class from all tabs
+                tabs.forEach(t => t.classList.remove('active'));
+                
+                // Add active class to clicked tab
+                this.classList.add('active');
+                
+                // Hide all content
+                mediaContents.forEach(content => {
+                    content.classList.remove('active');
+                });
+                
+                // Show selected content
+                const targetContent = document.getElementById(targetTab + 'Content');
+                if (targetContent) {
+                    targetContent.classList.add('active');
+                }
+
+                // Stop YouTube video when switching away from video tab
+                if (targetTab !== 'video' && youtubeVideo) {
+                    const iframeSrc = youtubeVideo.src;
+                    youtubeVideo.src = iframeSrc; // Reload iframe to stop video
+                }
+
+                // Update swiper when switching back to images
+                if (targetTab === 'images') {
+                    setTimeout(() => {
+                        propertySwiper.update();
+                        propertyThumbs.update();
+                    }, 100);
+                }
+            });
+        });
+
+        // Expand gallery functionality
+        const expandBtn = document.querySelector('.gallery-expand');
+        if (expandBtn) {
+            expandBtn.addEventListener('click', function() {
+                alert('Fullscreen gallery functionality would go here');
+            });
+        }
+    </script>
+</body>
+</html>
